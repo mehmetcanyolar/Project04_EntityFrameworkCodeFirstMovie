@@ -14,5 +14,7 @@ namespace Project04_EntityFrameworkCodeFirstMovie.DAL.Contex
 
        public DbSet<Movie> Movies { get; set; } // movie class ımı sql de Movies isimli bir tabloya dönüştürme işlemi, class name is odd, table name is plural
 
+
+        public DbSet<Category> Categories { get; set; }
     }
 }

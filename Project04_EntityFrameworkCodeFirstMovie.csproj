@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\Contex\MovieContext.cs" />
+    <Compile Include="DAL\Entities\Category.cs" />
     <Compile Include="DAL\Entities\Movie.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -64,9 +65,26 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202411082116567_mig1.cs" />
+    <Compile Include="Migrations\202411082116567_mig1.Designer.cs">
+      <DependentUpon>202411082116567_mig1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411082130174_mig2.cs" />
+    <Compile Include="Migrations\202411082130174_mig2.Designer.cs">
+      <DependentUpon>202411082130174_mig2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411082116567_mig1.resx">
+      <DependentUpon>202411082116567_mig1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411082130174_mig2.resx">
+      <DependentUpon>202411082130174_mig2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
